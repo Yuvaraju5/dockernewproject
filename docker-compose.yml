@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: yuva777/paytmmovies:latest
+    image: yuva777/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: yuva777/paytmtrain:latest
+    image: yuva777/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: yuva777/paytmdth:latest
+    image: yuva777/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: yuva777/paytmrecharge:latest
+    image: yuva777/payrecharge:latest
     ports:
       - "84:80"
     deploy:
